@@ -22,6 +22,14 @@ namespace MoveCk
 
 			Console.WriteLine("end !!");
 
+			foreach (var ab in wk.dic_AB)
+			{
+				var key = ab.Key;
+				var value = ab.Value;
+
+				Console.WriteLine(key);
+			}
+
 			Console.ReadKey();
 		}
 	}

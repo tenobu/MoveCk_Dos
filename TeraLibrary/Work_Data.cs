@@ -47,6 +47,14 @@ namespace TeraLibrary
 
 			ab_Data = new AB_Data(dic_AB, di_a);
 		}
+
+		public bool Copy()
+		{
+			ab_Data.Copy();
+
+			return false;
+		}
+
 	}
 
 	public class AB_Data
@@ -98,6 +106,16 @@ namespace TeraLibrary
 			//Console.WriteLine("Length = " + a_Length);
 
 			dic_AB.Add(a_FullName, this);
+		}
+
+		public bool Copy()
+		{
+			if (type.Equals("File"))
+			{
+
+			}
+
+			return false;
 		}
 
 		private long SetFilesSize(DirectoryInfo di)
