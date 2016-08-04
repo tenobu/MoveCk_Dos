@@ -20,6 +20,8 @@ namespace MoveCk
 				@"C:\Users\x45991\Documents\Projects",
 				@"C:\Users\x45991\Documents\Program Files");
 
+			wk.Copy();
+
 			Console.WriteLine("end !!");
 
 			foreach (var ab in wk.dic_AB)
@@ -27,7 +29,7 @@ namespace MoveCk
 				var key = ab.Key;
 				var value = ab.Value;
 
-				Console.WriteLine(key);
+				Console.WriteLine(value.a_FullName + " -> " + value.b_FullName);
 			}
 
 			Console.ReadKey();
